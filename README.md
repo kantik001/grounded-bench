@@ -12,7 +12,7 @@
 |---|---|
 | **Track (v0)** | Offline scoring (dataset + prediction JSONL, no LLM required) |
 | **Metrics** | **NVR** · **CP** · **HR** · **RR** — [METRICS.md](METRICS.md) |
-| **Dataset** | `dataset/grounded-bench-v0.jsonl` (**280** cases, seed `42`) |
+| **Dataset** | `dataset/grounded-bench-v0.jsonl` (**1000** cases, seed `42`) |
 | **Leaderboard** | [leaderboard/index.html](leaderboard/index.html) |
 
 ## Quick start
@@ -34,12 +34,12 @@ python -m grounded_bench publish --results results/oracle.json --out leaderboard
 
 Or: `make ci`
 
-## Reference numbers (v0.1.0, seed 42)
+## Reference numbers (v0.1.1, seed 42)
 
 | System | NVR ↑ | CP ↑ | HR ↓ | RR ↑ | Cases |
 |--------|------:|-----:|-----:|-----:|------:|
-| `oracle` | **100%** | **100%** | **0%** | **100%** | 280 |
-| `weak-baseline` | 32.9% | 66.7% | 100% | 0% | 280 |
+| `oracle` | **100%** | **100%** | **0%** | **100%** | 1000 |
+| `weak-baseline` | 33.2% | 66.7% | 100% | 0% | 1000 |
 
 Exact figures are regenerated into `leaderboard/results.json` / `history.json` on each publish. CI gates oracle to NVR/CP/RR ≥ 99% and HR ≤ 1%.
 
@@ -84,9 +84,9 @@ python -m grounded_bench run \
 
 ## Status
 
-Shipped (v0): offline metrics, 280-case dataset, oracle/weak predictions, CLI, leaderboard, CI.
+Shipped (v0): offline metrics, **1000**-case dataset, oracle/weak predictions, CLI, leaderboard, CI.
 
-Next: expand toward 1000 cases · optional live track (grounded-llm / guardrails) · optional Go runner.
+Next: optional live track (grounded-llm / guardrails) · optional Go runner.
 
 ## License
 

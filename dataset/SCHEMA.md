@@ -31,5 +31,5 @@ Bundled:
 Regenerate:
 
 ```bash
-python dataset/generate_v0.py --seed 42 --count 280
+python dataset/generate_v0.py --seed 42 --count 1000
 ```
