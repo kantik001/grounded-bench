@@ -236,7 +236,7 @@ def main() -> int:
     parser.add_argument("--oracle", type=Path, default=Path("predictions/oracle.jsonl"))
     parser.add_argument("--weak", type=Path, default=Path("predictions/weak-baseline.jsonl"))
     parser.add_argument("--seed", type=int, default=42)
-    parser.add_argument("--count", type=int, default=280)
+    parser.add_argument("--count", type=int, default=1000)
     args = parser.parse_args()
 
     cases, oracle, weak = generate(args.count, args.seed)

@@ -7,7 +7,7 @@ validate:
 	python -m grounded_bench validate --dataset dataset/grounded-bench-v0.jsonl
 
 generate:
-	python dataset/generate_v0.py --out dataset/grounded-bench-v0.jsonl --seed 42 --count 280
+	python dataset/generate_v0.py --out dataset/grounded-bench-v0.jsonl --seed 42 --count 1000
 
 run:
 	python -m grounded_bench run --dataset dataset/grounded-bench-v0.jsonl --predictions predictions/oracle.jsonl --system oracle --seed 42 --write results/oracle.json

@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.1] - 2026-07-28
+
+### Changed
+
+- Expanded offline dataset from 280 → **1000** cases (same seed `42`, generator)
+
 ## [0.1.0] - 2026-07-28
 
 ### Added
