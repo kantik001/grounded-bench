@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grounded-bench"
+version = "0.1.0"
+description = "Public benchmark for verifiable / grounded generation (NVR, CP, HR, RR)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Kantemir Satibalov" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+grounded-bench = "grounded_bench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["grounded_bench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

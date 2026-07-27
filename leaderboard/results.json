@@ -1,0 +1,3869 @@
+{
+  "benchmark": "grounded-bench",
+  "benchmark_version": "0.1.0",
+  "track": "offline",
+  "system": "weak-baseline",
+  "seed": 42,
+  "timestamp": "2026-07-27T22:20:03.365408+00:00",
+  "hardware": {
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.12.0",
+    "machine": "AMD64"
+  },
+  "dataset": {
+    "path": "dataset/grounded-bench-v0.jsonl",
+    "predictions": "predictions/weak-baseline.jsonl",
+    "cases_total": 280,
+    "cases_scored": 280
+  },
+  "metrics": {
+    "cases": 280,
+    "nvr": 0.32857142857142857,
+    "citation_precision": 0.6666666666666666,
+    "hallucination_rate": 1.0,
+    "refusal_rate": 0.0,
+    "nvr_denominator": 210,
+    "cp_denominator": 210,
+    "refusal_denominator": 70,
+    "hallucinated_cases": 280
+  },
+  "by_domain": {
+    "finance": {
+      "cases": 57,
+      "nvr": 0.32558139534883723,
+      "citation_precision": 0.6511627906976745,
+      "hallucination_rate": 1.0,
+      "refusal_rate": 0.0,
+      "nvr_denominator": 43,
+      "cp_denominator": 43,
+      "refusal_denominator": 14,
+      "hallucinated_cases": 57
+    },
+    "hr": {
+      "cases": 57,
+      "nvr": 0.32558139534883723,
+      "citation_precision": 0.6744186046511628,
+      "hallucination_rate": 1.0,
+      "refusal_rate": 0.0,
+      "nvr_denominator": 43,
+      "cp_denominator": 43,
+      "refusal_denominator": 14,
+      "hallucinated_cases": 57
+    },
+    "legal": {
+      "cases": 55,
+      "nvr": 0.3170731707317073,
+      "citation_precision": 0.6829268292682927,
+      "hallucination_rate": 1.0,
+      "refusal_rate": 0.0,
+      "nvr_denominator": 41,
+      "cp_denominator": 41,
+      "refusal_denominator": 14,
+      "hallucinated_cases": 55
+    },
+    "medical": {
+      "cases": 56,
+      "nvr": 0.3333333333333333,
+      "citation_precision": 0.6666666666666666,
+      "hallucination_rate": 1.0,
+      "refusal_rate": 0.0,
+      "nvr_denominator": 42,
+      "cp_denominator": 42,
+      "refusal_denominator": 14,
+      "hallucinated_cases": 56
+    },
+    "technical": {
+      "cases": 55,
+      "nvr": 0.34146341463414637,
+      "citation_precision": 0.6585365853658537,
+      "hallucination_rate": 1.0,
+      "refusal_rate": 0.0,
+      "nvr_denominator": 41,
+      "cp_denominator": 41,
+      "refusal_denominator": 14,
+      "hallucinated_cases": 55
+    }
+  },
+  "cases": [
+    {
+      "id": "medical-0171-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        462.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0010",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        559.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0181",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-181"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0138",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        869.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0093",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-93"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0126",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        290.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0119-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        403.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0030",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        763.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0015-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        489.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0225",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-225"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0098",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        462.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0274",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        572.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0133",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-133"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0172",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        516.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0154",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        803.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0052",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        165.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0097",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-97"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0033",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-33"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0127-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        169.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0122",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        158.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0229",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-229"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0259-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        120.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0014",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        444.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0235-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        151.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0074",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        170.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0087-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        325.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0251-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        653.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0243-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        586.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0253",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-253"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0099-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        578.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0206",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        512.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0271-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        503.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0118",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        598.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0221",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-221"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0238",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        672.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0176",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        854.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0212",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        100.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0262",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        529.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0237",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-237"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0155-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        370.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0146",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        726.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0034",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        755.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0195-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        494.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0003-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        858.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0129",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-129"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0145",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-145"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0266",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        597.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0123-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        588.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0043-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        352.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0083-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        629.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0231-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        804.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0203-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        779.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0077",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-77"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0210",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        278.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0005",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-5"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0209",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-209"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0156",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        357.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0007-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        127.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0184",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        775.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0187-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        756.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0170",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        355.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "anchor-hr-vacation",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        99.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0104",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        294.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0134",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        785.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0092",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        785.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0048",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        605.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0223-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        417.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0273",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-273"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0039-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        680.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0192",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        710.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0239-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        873.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0240",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        836.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0191-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        371.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0018",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        649.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0224",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        303.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0120",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        693.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0006",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        338.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0246",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        896.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0136",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        234.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0090",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        132.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0059-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        400.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0009",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-9"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0061",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-61"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0076",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        586.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0102",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        845.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0046",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        697.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0234",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        812.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0088",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        824.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0035-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        324.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0069",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-69"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0047-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        324.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0020",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        743.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0135-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        344.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0016",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        452.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0215-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        429.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0261",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-261"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0121",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-121"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0111-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        342.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0106",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        385.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0089",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-89"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0272",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        778.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0013",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-13"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0204",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        407.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0091-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        626.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0188",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        795.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0032",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        846.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0218",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        853.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0080",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        305.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0178",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        852.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0094",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        684.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0101",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-101"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0163-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        214.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0244",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        869.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0175-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        522.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0166",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        665.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0182",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        571.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0198",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        651.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0072",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        680.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0037",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-37"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0095-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        348.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0263-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        852.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0227-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        524.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0150",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        218.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0258",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        888.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0183-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        333.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0197",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-197"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0042",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        246.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "anchor-fin-mln",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        99000000.0
+      ],
+      "invalid_citations": [
+        "wrong"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0201",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-201"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0152",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        388.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0213",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-213"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0028",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        463.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0162",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        537.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0144",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        391.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0066",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        880.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0130",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        708.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "anchor-oos-refusal",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        50000000000.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0029",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-29"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0107-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        177.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0208",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        530.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0096",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        516.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0199-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        859.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0151-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        666.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0249",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-249"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0185",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-185"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0143-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        170.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0125",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-125"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0268",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        514.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0113",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-113"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0062",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        880.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0082",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        482.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0128",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        340.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0071-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        159.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0276",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        316.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0081",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-81"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0217",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-217"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0254",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        319.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0177",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-177"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0116",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        533.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0053",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-53"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0147-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        108.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0024",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        396.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0160",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        368.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0078",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        721.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0165",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-165"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0058",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        756.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0252",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        254.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0193",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-193"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0067-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        897.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0267-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        444.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0021",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-21"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0041",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-41"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0157",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-157"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0255-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        517.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0228",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        299.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0161",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-161"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0219-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        186.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0109",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-109"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0025",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-25"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0241",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-241"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0055-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        111.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0124",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        643.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0031-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        750.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0265",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-265"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0173",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-173"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0036",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        886.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0247-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        741.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0054",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        357.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0211-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        408.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0022",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        821.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0073",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-73"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0019-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        180.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0063-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        208.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0112",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        597.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0200",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        301.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0196",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        360.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0207-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        667.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0075-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        228.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0257",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-257"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0153",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-153"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0051-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        796.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0049",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-49"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0011-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        106.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0250",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        443.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0159-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        441.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0179-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        263.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0190",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        367.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0174",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        266.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0242",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        262.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0012",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        532.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0148",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        667.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0108",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        663.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0110",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        115.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0004",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        704.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0038",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        374.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0079-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        652.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0141",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-141"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0275-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        366.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0001",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-1"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0068",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        100.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0070",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        471.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0056",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        217.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0230",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        349.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0167-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        230.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0169",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-169"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0256",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        577.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0008",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        833.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0222",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        869.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0232",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        868.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0216",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        552.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0084",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        353.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0137",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-137"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0085",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-85"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0189",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-189"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0140",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        202.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0117",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-117"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0017",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-17"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0086",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        667.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0040",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        317.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0186",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        171.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0044",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        651.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0202",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        438.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0149",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-149"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0158",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        383.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0164",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        807.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0105",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-105"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0194",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        720.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0100",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        789.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0115-oos",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        371.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0139-oos",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        569.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0131-oos",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        183.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "technical-0103-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        211.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0260",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        588.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0180",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        491.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0248",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        550.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "medical-0026",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        384.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0233",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-233"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0114",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        488.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0000",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        125.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0142",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        235.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0023-oos",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        777.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0269",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-269"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0226",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        725.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "hr-0214",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        693.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0050",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        742.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "technical-0168",
+      "domain": "technical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        473.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0027-oos",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": null,
+      "cp": null,
+      "refusal_correct": false,
+      "unsupported_numbers": [
+        473.0
+      ],
+      "invalid_citations": [
+        "invented"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0264",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        717.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0220",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        779.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0060",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        564.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0065",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-65"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "medical-0236",
+      "domain": "medical",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        224.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0205",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-205"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0245",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-245"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "hr-0064",
+      "domain": "hr",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        754.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0002",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        854.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "legal-0057",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-57"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "legal-0132",
+      "domain": "legal",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        697.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    },
+    {
+      "id": "finance-0045",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 1.0,
+      "cp": 0.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [],
+      "invalid_citations": [
+        "fake-45"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "finance-0270",
+      "domain": "finance",
+      "hallucinated": true,
+      "nvr": 0.0,
+      "cp": 1.0,
+      "refusal_correct": null,
+      "unsupported_numbers": [
+        646.0
+      ],
+      "invalid_citations": [],
+      "notes": ""
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -e ".[dev]"
+      - name: Unit tests
+        run: python -m pytest -q
+      - name: Validate dataset
+        run: python -m grounded_bench validate --dataset dataset/grounded-bench-v0.jsonl
+      - name: Oracle run
+        run: >
+          python -m grounded_bench run
+          --dataset dataset/grounded-bench-v0.jsonl
+          --predictions predictions/oracle.jsonl
+          --system oracle
+          --seed 42
+          --write results/oracle.json
+      - name: Weak baseline run
+        run: >
+          python -m grounded_bench run
+          --dataset dataset/grounded-bench-v0.jsonl
+          --predictions predictions/weak-baseline.jsonl
+          --system weak-baseline
+          --seed 42
+          --write results/weak.json
+      - name: Publish leaderboard
+        run: |
+          python -m grounded_bench publish --results results/oracle.json --out leaderboard/
+          python -m grounded_bench publish --results results/weak.json --out leaderboard/
+      - name: Oracle quality gate
+        run: |
+          python - <<'PY'
+          import json, sys
+          m = json.load(open("results/oracle.json", encoding="utf-8"))["metrics"]
+          assert m["nvr"] is not None and m["nvr"] >= 0.99, m
+          assert m["citation_precision"] is not None and m["citation_precision"] >= 0.99, m
+          assert m["hallucination_rate"] <= 0.01, m
+          assert m["refusal_rate"] >= 0.99, m
+          print("oracle gate OK", m)
+          PY

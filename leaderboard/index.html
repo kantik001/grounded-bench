@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>grounded-bench leaderboard</title>
+  <style>
+    :root {
+      --bg: #0f1419;
+      --panel: #1a222c;
+      --text: #e7ecf1;
+      --muted: #9aa7b5;
+      --accent: #3d9cfd;
+      --line: #2a3542;
+    }
+    body {
+      margin: 0; font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #1c2a3a, var(--bg));
+      color: var(--text); line-height: 1.45;
+    }
+    main { max-width: 960px; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+    h1 { font-size: 1.75rem; margin: 0 0 0.35rem; letter-spacing: -0.02em; }
+    .sub { color: var(--muted); margin-bottom: 1.75rem; }
+    table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); }
+    th, td { padding: 0.7rem 0.75rem; text-align: left; border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+    th { color: var(--muted); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; }
+    tr:last-child td { border-bottom: none; }
+    code { color: var(--accent); }
+    .meta { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>grounded-bench</h1>
+    <p class="sub">Offline verifiable-generation leaderboard — NVR · Citation Precision · Hallucination Rate · Refusal Rate</p>
+    <table>
+      <thead>
+        <tr>
+          <th>System</th><th>NVR ↑</th><th>CP ↑</th><th>HR ↓</th><th>RR ↑</th>
+          <th>Cases</th><th>Date</th><th>Repro</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>oracle</td><td>100.0%</td><td>100.0%</td><td>0.0%</td><td>100.0%</td><td>280</td><td>2026-07-27</td><td>seed=42 · v0.1.0</td></tr><tr><td>weak-baseline</td><td>32.9%</td><td>66.7%</td><td>100.0%</td><td>0.0%</td><td>280</td><td>2026-07-27</td><td>seed=42 · v0.1.0</td></tr>
+      </tbody>
+    </table>
+    <p class="meta">
+      Latest hardware: <code>Windows-10-10.0.19045-SP0</code> · Python <code>3.12.0</code><br/>
+      Definitions: <a href="../METRICS.md">METRICS.md</a> · Dataset seed reproducible via <code>grounded-bench run --seed</code>
+    </p>
+  </main>
+</body>
+</html>
