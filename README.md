@@ -77,6 +77,7 @@ python -m grounded_bench run \
 |------|------|
 | [grounded-llm](https://github.com/kantik001/grounded-llm) | Cited RAG + Spec + retrieval eval |
 | [grounded-guardrails](https://github.com/kantik001/grounded-guardrails) | Token-level verify gRPC `:50052` |
+| [grounded-vllm](https://github.com/kantik001/grounded-vllm) | Serving-path verify proxy for vLLM |
 | [mcp-gateway](https://github.com/kantik001/mcp-gateway) | MCP HTTP bridge |
 | [grounded-agent](https://github.com/kantik001/grounded-agent) | ReAct orchestrator |
 | **grounded-bench** | Public verifiable-generation benchmark |
