@@ -1,6 +1,6 @@
 """grounded-bench — offline metrics for verifiable / grounded generation."""
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 SEED_DEFAULT = 42
 NUMERIC_TOLERANCE = 0.01

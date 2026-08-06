@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2] - 2026-08-06
+
+### Added
+
+- Spec-faithful track for **grounded-llm@0.4.0** (`scripts/predict_spec_faithful.py`, `make score-spec`)
+- Contrast baseline `no-verify-naive` (wrong numbers / fake cites / no refusal)
+- [TRACKS.md](TRACKS.md) — offline vs live RAG scope
+
 ## [0.1.1] - 2026-07-28
 
 ### Changed

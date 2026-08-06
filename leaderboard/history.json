@@ -1,5 +1,27 @@
 [
   {
+    "system": "grounded-llm@0.4.0-spec-faithful",
+    "nvr": 1.0,
+    "cp": 1.0,
+    "hr": 0.0,
+    "rr": 1.0,
+    "cases": 1000,
+    "date": "2026-08-06",
+    "seed": 42,
+    "version": "0.1.2"
+  },
+  {
+    "system": "oracle",
+    "nvr": 1.0,
+    "cp": 1.0,
+    "hr": 0.0,
+    "rr": 1.0,
+    "cases": 1000,
+    "date": "2026-08-06",
+    "seed": 42,
+    "version": "0.1.2"
+  },
+  {
     "system": "oracle",
     "nvr": 1.0,
     "cp": 1.0,
@@ -31,6 +53,17 @@
     "date": "2026-07-27",
     "seed": 42,
     "version": "0.1.0"
+  },
+  {
+    "system": "weak-baseline",
+    "nvr": 0.332,
+    "cp": 0.6666666666666666,
+    "hr": 1.0,
+    "rr": 0.0,
+    "cases": 1000,
+    "date": "2026-08-06",
+    "seed": 42,
+    "version": "0.1.2"
   },
   {
     "system": "weak-baseline",
@@ -64,5 +97,16 @@
     "date": "2026-07-27",
     "seed": 42,
     "version": "0.1.0"
+  },
+  {
+    "system": "no-verify-naive",
+    "nvr": 0.01067378252168112,
+    "cp": 0.0,
+    "hr": 1.0,
+    "rr": 0.0,
+    "cases": 1000,
+    "date": "2026-08-06",
+    "seed": 42,
+    "version": "0.1.2"
   }
 ]

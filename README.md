@@ -39,9 +39,18 @@ Or: `make ci`
 | System | NVR ↑ | CP ↑ | HR ↓ | RR ↑ | Cases |
 |--------|------:|-----:|-----:|-----:|------:|
 | `oracle` | **100%** | **100%** | **0%** | **100%** | 1000 |
+| `grounded-llm@0.4.0-spec-faithful` | **100%** | **100%** | **0%** | **100%** | 1000 |
 | `weak-baseline` | 33.2% | 66.7% | 100% | 0% | 1000 |
+| `no-verify-naive` | 1.1% | 0% | **100%** | **0%** | 1000 |
 
-Exact figures are regenerated into `leaderboard/results.json` / `history.json` on each publish. CI gates oracle to NVR/CP/RR ≥ 99% and HR ≤ 1%.
+Regenerate Spec + naive rows:
+
+```bash
+make score-spec
+# or: python scripts/run_spec_track.py
+```
+
+See [TRACKS.md](TRACKS.md). Exact figures are regenerated into `leaderboard/results.json` / `history.json` on each publish. CI gates oracle to NVR/CP/RR ≥ 99% and HR ≤ 1%.
 
 ## Submit your system
 
@@ -86,7 +95,7 @@ python -m grounded_bench run \
 
 Shipped (v0): offline metrics, **1000**-case dataset, oracle/weak predictions, CLI, leaderboard, CI.
 
-Next: optional live track (grounded-llm / guardrails) · optional Go runner.
+Next: `make score-spec` publishes `grounded-llm@0.4.0-spec-faithful` vs `no-verify-naive` · optional live RAG track.
 
 ## License
 

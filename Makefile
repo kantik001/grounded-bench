@@ -1,4 +1,4 @@
-.PHONY: test validate generate run run-weak publish ci
+.PHONY: test validate generate run run-weak publish ci score-spec
 
 test:
 	python -m pytest -q
@@ -14,6 +14,10 @@ run:
 
 run-weak:
 	python -m grounded_bench run --dataset dataset/grounded-bench-v0.jsonl --predictions predictions/weak-baseline.jsonl --system weak-baseline --seed 42 --write results/weak.json
+
+# Spec-faithful grounded-llm row + no-verify contrast → leaderboard
+score-spec:
+	python scripts/run_spec_track.py
 
 publish:
 	python -m grounded_bench publish --results results/oracle.json --out leaderboard/
